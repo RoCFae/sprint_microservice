@@ -8,26 +8,26 @@ import javax.persistence.Id;
 public class Veiculo {
 	@Id
 	@GeneratedValue
-	private String placa;
+	private String id;
 	
-	private int ano;
+	private int placa;
 	
 	private String modelo;
 
-	public String getPlaca() {
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public int getPlaca() {
 		return placa;
 	}
 
-	public void setPlaca(String placa) {
+	public void setPlaca(int placa) {
 		this.placa = placa;
-	}
-
-	public int getAno() {
-		return ano;
-	}
-
-	public void setAno(int ano) {
-		this.ano = ano;
 	}
 
 	public String getModelo() {
@@ -37,5 +37,6 @@ public class Veiculo {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
+
 	
 }
